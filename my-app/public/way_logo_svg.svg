@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.37 366.74">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: .01em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        font-family: AcuminConcept-WideLight, 'Acumin Variable Concept';
+        font-size: 41.54px;
+        font-variation-settings: 'wght' 300, 'wdth' 115, 'slnt' 0;
+        font-weight: 300;
+      }
+
+      .cls-9, .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        font-family: AcuminConcept-WideBold, 'Acumin Variable Concept';
+        font-size: 172px;
+        font-variation-settings: 'wght' 700, 'wdth' 115, 'slnt' 0;
+        font-weight: 700;
+      }
+
+      .cls-12 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-13 {
+        fill: #007aff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-13" cx="264.18" cy="173.5" rx="264.18" ry="173.5"/>
+  <ellipse class="cls-13" cx="427.59" cy="301.86" rx="74.41" ry="48.86"/>
+  <ellipse class="cls-13" cx="468.09" cy="329.37" rx="56.91" ry="37.37"/>
+  <text class="cls-10" transform="translate(54.43 213.05)"><tspan class="cls-3" x="0" y="0">W</tspan><tspan class="cls-1" x="170.11" y="0">A</tspan><tspan class="cls-2" x="286.04" y="0">Y</tspan></text>
+  <text class="cls-9" transform="translate(87.41 261.12)"><tspan class="cls-4" x="0" y="0">W</tspan><tspan class="cls-5" x="44.95" y="0">h</tspan><tspan class="cls-8" x="70.67" y="0">a</tspan><tspan x="94.64" y="0">t </tspan><tspan class="cls-11" x="121.97" y="0">A</tspan><tspan x="153.96" y="0">bo</tspan><tspan class="cls-6" x="205.97" y="0">u</tspan><tspan class="cls-7" x="232.14" y="0">t </tspan><tspan class="cls-12" x="259.48" y="0">Y</tspan><tspan class="cls-7" x="283.03" y="0">ou</tspan></text>
+</svg>

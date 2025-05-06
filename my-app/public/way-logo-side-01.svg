@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875 368">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .06em;
+      }
+
+      .cls-2 {
+        fill: #0071bc;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: .1em;
+      }
+
+      .cls-3 {
+        fill: #ed1c24;
+      }
+
+      .cls-7 {
+        font-family: Bahnschrift, Bahnschrift;
+        font-size: 45.11px;
+        font-variation-settings: 'wght' 400, 'wdth' 100;
+      }
+
+      .cls-4 {
+        fill: #00a99d;
+      }
+
+      .cls-8 {
+        letter-spacing: .1em;
+      }
+
+      .cls-9 {
+        font-family: Bahnschrift-SemiBold, Bahnschrift;
+        font-size: 201.94px;
+        font-variation-settings: 'wght' 600, 'wdth' 100;
+        font-weight: 600;
+      }
+
+      .cls-10 {
+        letter-spacing: .09em;
+      }
+    </style>
+  </defs>
+  <g id="logo">
+    <path class="cls-2" d="m174.14,327l119.31-92.98s47.24-40.13,7.47-89.85c0,0-36.04-41.96-88.25-.47-52.2,41.49-56.92,44.36-56.92,44.36l11.76,9.16s8.91,5.03,19.58-4.13,49.21-38.35,49.21-38.35c0,0,26.09-25.49,53.43,11.8,0,0,18.08,27.94-11.47,51.26-29.55,23.32-104.12,81.14-104.12,81.14v28.06Z"/>
+    <path class="cls-4" d="m174.76,327l-119.31-92.98s-47.24-40.13-7.47-89.85c0,0,36.04-41.96,88.25-.47,52.2,41.49,56.92,44.36,56.92,44.36l-11.76,9.16s-8.91,5.03-19.58-4.13-49.21-38.35-49.21-38.35c0,0-26.09-25.49-53.43,11.8,0,0-18.08,27.94,11.47,51.26,29.55,23.32,104.12,81.14,104.12,81.14v28.06Z"/>
+    <path class="cls-3" d="m175.39,155.24s-36.04-22.88-45.99-39.03c0,0-15.54-27.97,3.11-52.82,0,0,13.67-22.51,42.88-21.82-.62-.55,0,23.11,0,23.11,0,0-29.21-.05-27.97,29.78,0,0,0,16.16,18.64,26.1,0,0,3.73,4.23,8.7,6.47s.62,28.22.62,28.22Z"/>
+    <path class="cls-3" d="m174.81,155.24s36.04-22.88,45.99-39.03c0,0,15.54-27.97-3.11-52.82,0,0-13.67-22.51-42.88-21.82.62-.55,0,23.11,0,23.11,0,0,29.21-.05,27.97,29.78,0,0,0,16.16-18.64,26.1,0,0-3.73,4.23-8.7,6.47s-.62,28.22-.62,28.22Z"/>
+  </g>
+  <text class="cls-9" transform="translate(334.84 272.62) scale(1.24 1)"><tspan class="cls-5" x="0" y="0">WA</tspan><tspan x="283.98" y="0">Y</tspan></text>
+  <text class="cls-7" transform="translate(386.98 317.39)"><tspan class="cls-6" x="0" y="0">What Ab</tspan><tspan class="cls-10" x="199.54" y="0">o</tspan><tspan class="cls-8" x="228.08" y="0">ut </tspan><tspan class="cls-1" x="293.53" y="0">Y</tspan><tspan class="cls-10" x="318.75" y="0">o</tspan><tspan class="cls-8" x="347.29" y="0">u</tspan></text>
+</svg>
