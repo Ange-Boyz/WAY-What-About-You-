@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import WayLogo from '../assets/way-white.png'
 
 const LandingPage = () => {
     return (
         <div className="">
-            <div className=" md:bg-[url('/bg1.jpg')] bg-[url('/bg.png')] bg-cover bg-center h-screen w-full">
+            <div className=" md:bg-[url('./assets/bg1.jpg')] bg-[url('./assets/bg.png')] bg-cover bg-center h-screen w-full">
                 <div className=" w-full h-full bg-[rgba(0,0,0,0.8)] flex flex-col justify-between pt-5 pb-10">
                     <div className="nav opacity-100 flex items-center justify-between md:px-20 px-5">
-                        <div className="logo md:w-30 w-20 opacity-100"><img src="way-white.png" alt="" /></div>
+                        <div className="logo md:w-30 w-20 opacity-100"><img src={WayLogo} alt="" /></div>
                         <div className="navbar text-white">
                             <ul className="opacity-100 md:flex hidden text-xl space-x-5">
                                 <li >
