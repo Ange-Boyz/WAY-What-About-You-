@@ -3,8 +3,8 @@ import angeBoyzImg from './assets/ange_boyz.jpg';
 import isabelaImg from './assets/isabela.jpg';
 import bryanAdemolaImg from './assets/bryan_ademola.jpg';
 import laurianeJlowwImg from './assets/lauriane_jloww.jpg';
-import locationIcon from './assets/location.png';
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const friends = [
   {
@@ -80,11 +80,7 @@ function FriendCard({ name, city, image, status }) {
           justifyContent: "center"
         }}
       >
-        <img
-          src={locationIcon}
-          alt="location"
-          style={{ width: "14px", height: "14px", marginRight: "4px" }}
-        />
+        <FaMapMarkerAlt style={{ marginRight: "4px", color: "#888", fontSize: "15px" }} />
         {city}
       </div>
       <Link to={`/profile/${name}`}>
