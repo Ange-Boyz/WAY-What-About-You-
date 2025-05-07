@@ -5,7 +5,7 @@ const LandingPage = () => {
     return (
         <div className="">
             <div className=" bg-[url('/bg1.jpg')] bg-cover bg-center h-screen w-full">
-                <div className=" w-full h-full md:bg-[rgba(0,0,0,0.8)] flex flex-col justify-between pt-5 pb-10">
+                <div className=" w-full h-full bg-[rgba(0,0,0,0.8)] flex flex-col justify-between pt-5 pb-10">
                     <div className="nav opacity-100 flex items-center justify-between md:px-20 px-5">
                         <div className="logo md:w-30 w-20 opacity-100"><img src="way-white.png" alt="" /></div>
                         <div className="navbar text-white">
