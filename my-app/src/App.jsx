@@ -32,7 +32,7 @@ function App() {
                 </Route>
                 <Route path='/profile' element={<Profile />} />
                 <Route path='/story' element={<Story />} />
-                <Route path='/chat' element={<ChatPage />} />
+                <Route path='/chatPage' element={<ChatPage />} />
                 <Route path='/discussion' element={<DiscussionPage />} />
               </Route>
             </Routes>
