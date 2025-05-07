@@ -10,7 +10,7 @@ const SideBar = () => {
 
             <div className="flex  flex-col  md:justify-between md:h-[80%]  px-3">
                 <div className="navbar">
-                    <ul className="space-y-2 flex md:block justify-center space-x-8 md:space-x-0">
+                    <ul className="space-y-2 flex md:block justify-center space-x-6 md:space-x-0">
                         <li>
                             <NavLink to="/friends" className={({ isActive }) => isActive ? "flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-8 rounded-full font-bold text-[#ed1c24]" :
                                 "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full  md:pl-8 rounded-full"}>
