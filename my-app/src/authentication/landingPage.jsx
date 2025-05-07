@@ -5,7 +5,7 @@ const LandingPage = () => {
     return (
         <div className="">
             <div className=" bg-[url('bg1.jpg')] bg-cover bg-center h-screen w-full">
-                <div className=" w-full h-full bg-[rgba(0,0,0,0.8)] flex flex-col justify-between pt-5 pb-10">
+                <div className=" w-full h-full md:bg-[rgba(0,0,0,0.8)] flex flex-col justify-between pt-5 pb-10">
                     <div className="nav opacity-100 flex items-center justify-between md:px-20 px-5">
                         <div className="logo md:w-30 w-20 opacity-100"><img src="way-white.png" alt="" /></div>
                         <div className="navbar text-white">
@@ -23,7 +23,7 @@ const LandingPage = () => {
                         </div>
 
                     </div>
-                    <div className="opacity-100 text-white text-center md:text-7xl text-4xl px-3">
+                    <div className="opacity-100 text-white text-center md:text-7xl text-3xl px-3">
                         <p>Make new <span className="bg-gradient-to-r from-white to-[#00a99d] bg-clip-text text-transparent">Friends</span> and <br />
                             Discover new way of <br />seeing <span className="bg-gradient-to-r from-white to-[#0071bc] bg-clip-text text-transparent">Life</span>🙂!</p>
                     </div>
@@ -51,7 +51,7 @@ const LandingPage = () => {
                 </p>
                 <p className="text-red-500">WAY is still under development, so stay tuned and follow the journey as the platform grows step by step.</p>
             </div>
-            <div className="footer flex justify-between py-2 text-white  px-2 bg-gray-900">
+            <div className="footer flex justify-between py-2 text-white  px-2 bg-gray-900 mt-3">
                 <p>©Copyright 2025</p>
                 <p>Powered by WAYGroup</p>
             </div>
