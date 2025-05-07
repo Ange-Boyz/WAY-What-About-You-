@@ -1,8 +1,8 @@
 import React from "react";
-import angeBoyzImg from './assets/ange_boyz.jpg';
-import isabelaImg from './assets/isabela.jpg';
-import bryanAdemolaImg from './assets/bryan_ademola.jpg';
-import laurianeJlowwImg from './assets/lauriane_jloww.jpg';
+import angeBoyzImg from './assets/ange_boyz.jpeg';
+import isabelaImg from './assets/isabela.jpeg';
+import bryanAdemolaImg from './assets/bryan_ademola.jpeg';
+import laurianeJlowwImg from './assets/lauriane_jloww.jpeg';
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
@@ -34,70 +34,30 @@ const friends = [
 ];
 
 const statusStyles = {
-  single: { borderColor: "#008774", label: "Single" },
-  couple: { borderColor: "#be161d", label: "Couple" },
-  friend: { borderColor: "#005a96", label: "Friend" },
+  single: "border-[#008774]",
+  couple: "border-[#be161d]",
+  friend: "border-[#005a96]",
 };
 
 function FriendCard({ name, city, image, status }) {
-  const { borderColor, label } = statusStyles[status] || statusStyles.friend;
+  const borderColor = statusStyles[status] || statusStyles.friend;
   return (
     <div
-      style={{
-        border: `2.5px solid ${borderColor}`,
-        borderRadius: "18px",
-        padding: "10px 10px 16px 10px",
-        margin: "0",
-        width: "165px",
-        boxSizing: "border-box",
-        position: "relative",
-        background: "#fff",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
+      className={`flex flex-col items-center bg-white rounded-xl shadow-md p-3 w-[165px] border-2 ${borderColor}`}
     >
       <img
         src={image}
         alt={name}
-        style={{
-          width: "145px",
-          height: "145px",
-          objectFit: "cover",
-          borderRadius: "14px",
-        }}
+        className="w-[145px] h-[145px] object-cover rounded-lg"
       />
-      <div style={{ marginTop: "10px", fontWeight: 600, fontSize: "16px", textAlign: "center" }}>{name}</div>
-      <div
-        style={{
-          color: "#888",
-          fontSize: "13px",
-          marginBottom: "8px",
-          textAlign: "center",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center"
-        }}
-      >
-        <FaMapMarkerAlt style={{ marginRight: "4px", color: "#888", fontSize: "15px" }} />
+      <div className="mt-2 font-semibold text-base text-center">{name}</div>
+      <div className="flex items-center justify-center text-gray-500 text-sm mb-2">
+        <FaMapMarkerAlt className="mr-1 text-gray-400 text-[15px]" />
         {city}
       </div>
-      <Link to={`/profile/${name}`}>
+      <Link to={`/profile/${name}`} className="w-full">
         <button
-          style={{
-            marginTop: "auto",
-            padding: "7px 0",
-            width: "100%",
-            borderRadius: "10px",
-            border: "none",
-            background: "#f2f2f2",
-            color: "#005a96",
-            fontWeight: 500,
-            fontSize: "14px",
-            cursor: "pointer",
-            boxShadow: "0 1px 2px rgba(0,0,0,0.03)",
-          }}
+          className="w-full mt-auto py-2 rounded-lg bg-gray-100 text-[#005a96] font-medium text-sm shadow-sm hover:bg-gray-200 transition"
         >
           See the profile
         </button>
@@ -108,18 +68,7 @@ function FriendCard({ name, city, image, status }) {
 
 export default function FriendsList() {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(165px, 1fr))",
-        gap: "18px 10px",
-        justifyItems: "center",
-        maxWidth: "370px",
-        margin: "0 auto",
-        padding: "18px 0",
-        width: "100%",
-      }}
-    >
+    <div className="grid grid-cols-2 gap-x-2 gap-y-4 max-w-[370px] mx-auto py-4 w-full">
       {friends.map((friend, idx) => (
         <FriendCard key={idx} {...friend} />
       ))}
