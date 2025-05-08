@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './authentication/landingPage';
 import Login from './authentication/login';
-import SignUp from './authentication/signUp';
+import SignIn from './authentication/signUp';
 import Dashboard from './homePage/dashboard';
 import FriendsPage from './homePage/friends/friendsPage';
 import Friends from './homePage/friends/friends';
@@ -12,6 +12,7 @@ import Profile from './homePage/profile';
 import Story from './homePage/story';
 import ChatPage from './homePage/chat/chatPage';
 import DiscussionPage from './homePage/chat/discussionPage';
+import SignUp from './authentication/signUp';
 
 
 function App() {
