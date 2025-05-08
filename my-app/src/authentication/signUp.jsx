@@ -49,7 +49,6 @@ const SignUp = () => {
 
         <img src={girlyy} alt="girl with her friends" className="" />
 
-        {/* <div className="absolute left-23 rounded-full w-20 h-20 border bg-gradient-to-r from-pink-100  to-white hidden lg:flex" ></div> */}
       </div>
 
       {/* Right side */}
