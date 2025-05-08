@@ -4,7 +4,7 @@ import Logo from '../assets/way-logo-side.png'
 
 const SideBar = () => {
     return (
-        <div className="bg-[#f9e9ea]  md:h-full  space-y-10  md:rounded-none rounded-t-3xl md:shadow-none shadow-[inset_0_12px_0_0_white] ">
+        <div className="bg-[#f9e9ea]   md:h-full  space-y-10  md:rounded-none rounded-t-3xl md:shadow-none shadow-[inset_0_12px_0_0_white] ">
             <div className="logo hidden md:block">
                 <img src={Logo} alt="way icone" className="w-20  pt-3 ml-4 " />
             </div>
@@ -14,7 +14,7 @@ const SideBar = () => {
                     <ul className="space-y-2 flex md:block justify-center space-x-6 md:space-x-0">
                         <li className="">
                             <NavLink to="/friends" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4 md:pr-20 md:py-1 " :
-                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:pr-20 md:py-1 "}>
+                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:pr-20 md:py-1  "}>
                                 {({ isActive }) => (
                                     <>
                                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={isActive ? " bg-white md:bg-transparent w-15  h-15 p-4 md:p-0 md:w-7 md:h-7 rounded-full transition duration-120" : "w-15 h-15 p-4 md:p-0 md:w-7 md:h-7 transition duration-120 rounded-full"} >

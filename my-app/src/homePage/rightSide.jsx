@@ -10,7 +10,7 @@ const RightSide= ()=>{
         <>
         <div className="w-full bg-white h-full">
         <Routes>
-            <Route path="/" element={<Friends/>} />
+            <Route path="/friends" element={<Friends/>} />
             <Route path="/chatPage" element={<ChatPage/>} />
             <Route path="/story" element={<Story/>}/>
             <Route path="/profile" element={<Profile/>}/>
