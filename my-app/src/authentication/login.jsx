@@ -47,7 +47,7 @@ const Login = () => {
           <p className="text-gray-600 ">
             Access your account to continue your experience with us!
           </p>
-          <img src={girlyy} alt="girl with her friends" className="" />
+          <img src={girlyy} alt="girl with her friends" className="w-125 h-125" />
         </div>
       </div>
 
