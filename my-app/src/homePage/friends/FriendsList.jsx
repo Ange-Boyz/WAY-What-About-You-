@@ -4,14 +4,14 @@ import isabelaImg from '../../assets/isabela.jpeg';
 import bryanAdemolaImg from '../../assets/bryan_ademola.jpeg';
 import laurianeJlowwImg from '../../assets/lauriane_jloww.jpeg';
 import { Link } from "react-router-dom";
-import { FaMapMarkerAlt } from "react-icons/fa";
+
 
 const friends = [
   {
     name: "Ange Boyz",
     city: "Yaoundé",
     image: angeBoyzImg,
-    status: "friend", // "single", "couple", or "friend"
+    status: "friend",
   },
   {
     name: "Isabela",
@@ -21,7 +21,7 @@ const friends = [
   },
   {
     name: "Bryan ADEMOLA",
-    city: "Ebolowa",
+    city: "Buea",
     image: bryanAdemolaImg,
     status: "single",
   },
@@ -37,7 +37,7 @@ const friends = [
     name: "Lauriane JLOWW",
     city: "Yaoundé",
     image: laurianeJlowwImg,
-    status: "friend",
+    status: "couple",
   },
   {
     name: "Isabela",
@@ -56,33 +56,27 @@ const statusStyles = {
 function FriendCard({ name, city, image, status }) {
   const borderColor = statusStyles[status] || statusStyles.friend;
   return (
-    <div
-      className={`flex flex-col items-center bg-white rounded-xl shadow-md p-3 w-[165px] border-2 ${borderColor}`}
-    >
-      <img
-        src={image}
-        alt={name}
-        className="w-[145px] h-[145px] object-cover rounded-lg"
-      />
-      <div className="mt-2 font-semibold text-base text-center">{name}</div>
-      <div className="flex items-center justify-center text-gray-500 text-sm mb-2">
-        <FaMapMarkerAlt className="mr-1 text-gray-400 text-[15px]" />
-        {city}
+    <div className={`relative rounded-[22px] overflow-hidden border-[3.5px] ${borderColor} w-[170px] flex flex-col justify-end shadow-md`}>
+      <img src={image} alt={name} className="w-full h-[120px] object-cover" />
+      <div className="relative z-10 w-full bg-black/30 backdrop-blur-[2px] p-3 flex flex-col items-center rounded-b-[22px]">
+        <div className="font-bold text-white text-base drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] text-center break-words">{name}</div>
+        <div className="flex items-center text-white text-xs drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] mb-2">
+          <FaMapMarkerAlt className="mr-1" />
+          {city}
+        </div>
+        <Link to={`/profile/${name}`}>
+          <button className="bg-white/60 text-white text-xs font-semibold rounded-full px-4 py-1.5 shadow hover:bg-white/80 transition border border-white">
+            See the profile
+          </button>
+        </Link>
       </div>
-      <Link to={`/profile/${name}`} className="w-full">
-        <button
-          className="w-full mt-auto py-2 rounded-lg bg-gray-100 text-[#005a96] font-medium text-sm shadow-sm hover:bg-gray-200 transition"
-        >
-          See the profile
-        </button>
-      </Link>
     </div>
   );
 }
 
 export default function FriendsList() {
   return (
-    <div className="grid grid-cols-2 gap-x-2 gap-y-4 max-w-[370px] mx-auto py-4 w-full">
+    <div className="grid grid-cols-2 gap-4 max-w-[380px] mx-auto py-4">
       {friends.map((friend, idx) => (
         <FriendCard key={idx} {...friend} />
       ))}
