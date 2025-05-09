@@ -173,7 +173,7 @@ const SignUp = () => {
                 Already have an account?
               </span>
               <Link
-                to="/login"
+                to="/dashboard"
                 className="text-red-500 font-semibold hover:underline"
               >
                 Login
