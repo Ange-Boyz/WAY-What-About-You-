@@ -2,7 +2,7 @@ import React from "react";
 
 const Friends = () => {
     return (
-        <div className="">
+        <div className="h-[70%]">
            
             saclkasmclambjjbkm
             
