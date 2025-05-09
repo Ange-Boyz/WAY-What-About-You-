@@ -2,7 +2,8 @@ import React from "react";
 
 const RequestFriends = () =>{
     return(
-        <div className="">Request Friends page</div>
+        <div className="">Request Friends page
+        </div>
     )
 }
 

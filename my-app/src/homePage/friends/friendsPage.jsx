@@ -1,7 +1,12 @@
 import React from "react";
+import FriendsRoute from "./friendsRoute";
+import FriendsHeader from "./friendHeader";
+
 const FriendsPage = () => {
     return(
-        <div className="">Friends page</div>
+        <div className="">
+            <FriendsHeader/>
+        </div>
     )
 }
 

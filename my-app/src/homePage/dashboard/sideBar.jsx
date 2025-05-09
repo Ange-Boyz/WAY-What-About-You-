@@ -1,23 +1,23 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from '../assets/way-logo-side.png'
+import Logo from '../../assets/way-logo-side-01.svg'
 
 const SideBar = () => {
     return (
-        <div className="bg-[#f9e9ea]   md:h-full  space-y-10  md:rounded-none rounded-t-3xl md:shadow-none shadow-[inset_0_12px_0_0_white] ">
+        <div className="bg-[#f9e9ea] md:w-[15%] w-full md:h-full  space-y-10  md:rounded-none rounded-t-3xl md:shadow-none shadow-[inset_0_12px_0_0_white] ">
             <div className="logo hidden md:block">
                 <img src={Logo} alt="way icone" className="w-20  pt-3 ml-4 " />
             </div>
 
             <div className="flex  flex-col  md:justify-between md:h-[80%]  ">
                 <div className="navbar">
-                    <ul className="space-y-2 flex md:block justify-center space-x-6 md:space-x-0">
+                    <ul className="space-y-2 flex md:block justify-center space-x-6 md:space-x-0 relative">
                         <li className="">
-                            <NavLink to="/friends" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4 md:pr-20 md:py-1 " :
-                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:pr-20 md:py-1  "}>
+                            <NavLink to="/friendsPage" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4  md:py-1 " :
+                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:py-1 "}>
                                 {({ isActive }) => (
                                     <>
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={isActive ? " bg-white md:bg-transparent w-15  h-15 p-4 md:p-0 md:w-7 md:h-7 rounded-full transition duration-120" : "w-15 h-15 p-4 md:p-0 md:w-7 md:h-7 transition duration-120 rounded-full"} >
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={isActive ? " bg-white md:bg-transparent w-15  h-15 p-4 md:p-0 md:w-7 md:h-7 rounded-full transition duration-120" : "w-15 h-15 p-4 md:p-0 md:w-7 md:h-7 transition duration-120 rounded-full"}>
                                             <path d="M10.11 16.3075C10.1586 15.7875 10.2974 15.28 10.52 14.8075H4.25403C3.65764 14.8075 3.08564 15.0443 2.66374 15.4658C2.24185 15.8874 2.00456 16.4592 
                                             2.00403 17.0555V17.6335C2.00403 18.5255 2.32403 19.3895 2.90403 20.0685C4.46703 21.9025 6.85403 22.8075 10 22.8075C11.414 22.8075 12.672 22.6242 13.774 22.2575L12.559
                                              21.0425C11.7964 21.2192 10.9434 21.3075 10 21.3075C7.26203 21.3075 5.29603 20.5625 4.04303 19.0945C3.69483 18.6874 3.50334 18.1693 3.50303 17.6335V17.0555C3.50329 16.8568 
@@ -33,8 +33,8 @@ const SideBar = () => {
                         </li>
 
                         <li>
-                            <NavLink to="/chatPage" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4 md:pr-20 md:py-1 " :
-                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:pr-20 md:py-1 "}>
+                            <NavLink to="/chatPage" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4  md:py-1 " :
+                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:py-1 "}>
                                 {({ isActive }) => (
                                     <>
                                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" className={isActive ? " bg-white md:bg-transparent w-15  h-15 p-4 md:p-0 md:w-7 md:h-7 rounded-full transition duration-120" : "w-15 h-15 p-4 md:p-0 md:w-7 md:h-7 transition duration-120 rounded-full"}>
@@ -49,8 +49,8 @@ const SideBar = () => {
                         </li>
 
                         <li>
-                            <NavLink to="/story" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4 md:pr-20 md:py-1 " :
-                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:pr-20 md:py-1 "}>
+                            <NavLink to="/story" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4 md:py-1 " :
+                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:py-1 "}>
                                 {({ isActive }) => (
                                     <>
                                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={isActive ? " bg-white md:bg-transparent w-15  h-15 p-4 md:p-0 md:w-7 md:h-7 rounded-full transition duration-120" : "w-15 h-15 p-4 md:p-0 md:w-7 md:h-7 transition duration-120 rounded-full"}>
@@ -66,8 +66,8 @@ const SideBar = () => {
                         </li>
 
                         <li>
-                            <NavLink to="/profile" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4 md:pr-20 md:py-1 " :
-                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4 md:pr-20 md:py-1 "}>
+                            <NavLink to="/profile" className={({ isActive }) => isActive ? " md:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full   font-bold text-[#ed1c24] md:pl-4  md:py-1 " :
+                                "md:hover:bg-red-200 flex md:flex-row flex-col items-center  md:space-x-4 w-full    md:pl-4  md:py-1 "}>
                                 {({ isActive }) => (
                                     <>
                                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={isActive ? " bg-white md:bg-transparent w-15  h-15 p-4 md:p-0 md:w-7 md:h-7 rounded-full transition duration-120" : "w-15 h-15 p-4 md:p-0 md:w-7 md:h-7 transition duration-120 rounded-full"}>
@@ -87,7 +87,7 @@ const SideBar = () => {
                 </div>
                 <div className="down hidden md:block">
                     <ul>
-                        <li className="flex items-center space-x-4 w-full  py-3 pl-8 rounded-full">Log out</li>
+                        <li className="flex items-center    pl-8 rounded-full">Log out</li>
                     </ul>
                 </div>
             </div>

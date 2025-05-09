@@ -25,11 +25,25 @@ const friends = [
     image: bryanAdemolaImg,
     status: "single",
   },
+
+  {
+    name: "Ange Boyz",
+    city: "Yaoundé",
+    image: angeBoyzImg,
+    status: "friend", // "single", "couple", or "friend"
+  },
+  
   {
     name: "Lauriane JLOWW",
     city: "Yaoundé",
     image: laurianeJlowwImg,
     status: "friend",
+  },
+  {
+    name: "Isabela",
+    city: "Douala",
+    image: isabelaImg,
+    status: "couple",
   },
 ];
 
