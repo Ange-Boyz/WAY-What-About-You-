@@ -1,8 +1,11 @@
 import React from "react";
+import FriendsList from "./FriendsList";
 
 const Friends = () =>{
     return(
-        <div className="">Friends</div>
+        <div className="">Friendsjkadna
+        <FriendsList/>
+        </div>
     )
 }
 

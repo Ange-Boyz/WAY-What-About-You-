@@ -1,10 +1,10 @@
 import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import angeBoyzImg from '../../assets/ange_boyz.jpeg';
+import angeBoyzImg from '../../assets/ange_boyz.jpeg'
 import isabelaImg from '../../assets/isabela.jpeg';
 import bryanAdemolaImg from '../../assets/bryan_ademola.jpeg';
 import laurianeJlowwImg from '../../assets/lauriane_jloww.jpeg';
+import { Link } from "react-router-dom";
+
 
 const friends = [
   {
