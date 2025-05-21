@@ -58,7 +58,6 @@ const Login = () => {
           <Link to="/signUp" className="">
             <IoIosArrowBack />
           </Link>
-          <LuMenu />
         </div>
 
         {/* mobile header view*/}
@@ -103,13 +102,13 @@ const Login = () => {
               </div>
 
               <div className="flex justify-between items-center mb-6">
-                <a href="#" className="text-sm text-red-500 hover:underline">
+                <Link to="/resetPassword" className="text-sm text-red-500 hover:underline">
                   Forgot Password?
-                </a>
+                </Link>
               </div>
               <button
                 type="submit"
-                className="w-full bg-red-500 text-white py-3 px-6 rounded-full font-medium mb-6 hover:bg-red-600 transition duration-300 ease-in-out"
+                className="w-full bg-red-500 text-white py-3 px-6 rounded-full font-medium mb-6 hover:scale-110 transition duration-150 ease-in-out"
               >
                 Login
               </button>

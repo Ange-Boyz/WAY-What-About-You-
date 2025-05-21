@@ -15,6 +15,7 @@ import DiscussionPage from './homePage/chat/discussionPage';
 import SignUp from './authentication/signUp';
 import FriendsList from './homePage/friends/FriendsList';
 import LastSide from './homePage/dashboard/lastSide';
+import ResetPassword from './authentication/resetPassword';
 
 
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='frientList' element={<FriendsList />} />
           <Route path='lastSide' element={<LastSide />} />
           <Route path='friendsList' element={<FriendsList />} />
+          <Route path='resetPassword' element={<ResetPassword />} />
           <Route path='/*' element={<Dashboard />}>
             <Route path='friendsPage' element={<FriendsPage />}>
             {/* Routes enfants de friendsPage */}

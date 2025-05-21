@@ -8,7 +8,7 @@ const SignUp = () => {
   return (
     <div className="flex min-h-screen bg-white">
       {/* Desktop view only  */}
-      <div className="hidden lg:flex lg:w-1/2 bg-red-50 flex-col items-center justify-center p-12">
+      <div className="hidden lg:flex lg:w-1/2 bg-red-50 flex-col items-center justify-center py-12">
         {/* curve effect */}
         <svg
           className="absolute top-0 right-0 h-full w-44"
@@ -52,13 +52,12 @@ const SignUp = () => {
       </div>
 
       {/* Right side */}
-      <div className="w-full lg:w-1/2 flex flex-col h-screen">
+      <div className="w-full lg:w-1/2 flex flex-col h-screen py-12">
         {/* Mobile back button */}
         <div className="flex justify-between px-2 md:px-4 text-3xl h-6 pt-6 lg:hidden">
           <Link to="/login" className="">
             <IoIosArrowBack />
           </Link>
-          <LuMenu />
         </div>
 
         {/* mobile header view*/}
@@ -131,7 +130,7 @@ const SignUp = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#ed1c24] text-white py-3 px-6 rounded-full font-medium mb-6 hover:bg-red-600 transition duration-300 ease-in-out"
+                className="w-full bg-[#ed1c24] text-white py-3 px-6 rounded-full font-medium mb-6 hover:scale-110 transition duration-150 ease-in-out"
               >
                 Sign up
               </button>

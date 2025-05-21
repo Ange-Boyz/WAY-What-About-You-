@@ -10,7 +10,11 @@ export default {
         'way-red': '#ED1C24',
         'way-blue': '#0071BC',
         'way-green': '#00A99D',
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
