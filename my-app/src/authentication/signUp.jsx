@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import { LuMenu } from "react-icons/lu";
 import girlyy from "/src/assets/girl chatting.gif";
+import VerifyMail from "../onboarding/VerifyMail"; // Import the onboarding start
 
 const SignUp = () => {
+  const [showVerify, setShowVerify] = useState(false);
+
+  if (showVerify) {
+    return <VerifyMail />;
+  }
+
   return (
     <div className="flex min-h-screen bg-white">
       {/* Desktop view only  */}
@@ -46,9 +53,7 @@ const SignUp = () => {
         <p className="text-gray-600 ">
           Sign up to have an account and continue your journey with us.
         </p>
-
         <img src={girlyy} alt="girl with her friends" className="" />
-
       </div>
 
       {/* Right side */}
@@ -78,7 +83,12 @@ const SignUp = () => {
               Sign Up
             </h1>
 
-            <form>
+            <form
+              onSubmit={e => {
+                e.preventDefault();
+                setShowVerify(true); // Show onboarding after sign up
+              }}
+            >
               <div className="mb-4">
                 <label className="block text-gray-700 mb-2">Email</label>
                 <div className="relative">
